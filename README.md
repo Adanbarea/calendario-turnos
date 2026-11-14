@@ -8,3 +8,6 @@ https://adanbarea.github.io/calendario-turnos/ (the app's own repository, `Calen
   (Policy → App content → Privacy policy), so if it moves, change it there too.
 
 Plain HTML and one stylesheet (`estilo.css`), with no build step and nothing loaded from elsewhere.
+
+GitHub Pages publishes the **`gh-pages`** branch (it switched itself on when that branch was pushed).
+Keep `main` and `gh-pages` equal: commit on `main`, then `git push origin main main:gh-pages`.
