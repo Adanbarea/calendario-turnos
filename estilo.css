@@ -1,0 +1,50 @@
+/* The app's colors (res/values/colors.xml): the launcher blue and the calendar ink. */
+:root {
+  --fondo: #f9f9ff;
+  --tarjeta: #ffffff;
+  --tinta: #1b2f52;
+  --tinta-suave: #4f5b70;
+  --linea: #dde3ee;
+  --azul: #415f91;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --fondo: #111318;
+    --tarjeta: #1d2024;
+    --tinta: #e2e2e9;
+    --tinta-suave: #a9b0bf;
+    --linea: #33363d;
+    --azul: #aac7ff;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--fondo);
+  color: var(--tinta);
+  font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+h1, h2 { line-height: 1.15; margin: 0 0 12px; }
+h1 { font-size: 36px; letter-spacing: -0.5px; }
+h2 { font-size: 21px; }
+.lema { color: var(--tinta-suave); margin: 0 0 28px; }
+.tarjeta {
+  background: var(--tarjeta);
+  border: 1px solid var(--linea);
+  border-radius: 18px;
+  padding: 20px 22px;
+  margin: 0 0 16px;
+}
+.tarjeta p:last-child, .tarjeta ul:last-child { margin-bottom: 0; }
+ul { padding-left: 20px; }
+li { margin: 0 0 8px; }
+a { color: var(--azul); }
+#en { margin-top: 48px; }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-top: 28px;
+}
+.icono { width: 72px; height: 72px; border-radius: 18px; display: block; margin: 0 0 20px; }
